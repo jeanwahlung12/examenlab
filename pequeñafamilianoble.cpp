@@ -2,6 +2,8 @@
 #include<string>
 #include "pequeñafamilianoble.h"
 
+
+
 pequenafamilianoble::pequenafamilianoble(){
      nombre="";
      simboloescudo ="";
