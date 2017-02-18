@@ -12,7 +12,7 @@ class starks{
       int cantlobos;
       string animal;
       string lema;
-      vector<pequenafamilianoble*>* familias;
+      vector<pequenafamilianoble*> familias;
       string guerrerovalioso;
       int cantintegrantes;
    public:

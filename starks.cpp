@@ -30,7 +30,7 @@ void starks::setlema(string lem){
 }
 
 void starks::setfamilias(pequenafamilianoble* fam){
-  familias->push_back(fam);
+  familias.push_back(fam);
 }
 
 void starks::setguerrerovalioso(string guerrero){
@@ -58,7 +58,7 @@ string starks::getlema(){
 }
 
 pequenafamilianoble* starks::getfamilias(int num){
-   return familias->at(num);
+   return familias[num];
 }
 
 string starks::getguerrerovalioso(){
