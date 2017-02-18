@@ -42,7 +42,7 @@ void lannister::setcantintegrantes(int cant){
 
 
 void lannister::setguardias(guardia* guar){
-  guardias->push_back(guar);
+  guardias.push_back(guar);
 }
 
 
@@ -71,7 +71,7 @@ int lannister::getcantintegrantes(){
 }
 
 guardia* lannister::getguardias(int num){
-   return guardias->at(num);
+   return guardias[num];
 }
 
 

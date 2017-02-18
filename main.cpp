@@ -76,11 +76,66 @@ double defensa;
                cout << " desea agregar otra familia s/n :";
                cin >> resp2;
             }
-         else if(op2 ==2){
+         } if(op2 ==2){ 
+            char resp3 ='s';
+            lannister* lan = new lannister();
             string jefefamilia2;
             string animal2;
-            
-      }
+            string lema3;
+            int cantdinero;
+            int fuerzamon;
+            int cantintegrantes2;
+            cout << " ingrese el jefe de familia: ";
+            cin >> jefefamilia2;
+            cout << " ingrese el animal emblematico: ";
+            cin >> animal2;
+            cout << " ingrese el lema : ";
+            cin >> lema3;
+            cout << " ingrese la cantidad de dinero: ";
+            cin >> cantdinero;
+            cout << " ingrese la fuerza de la montaña: ";
+            cin >> fuerzamon;
+            cout << " ingrese la cantidad de integrantes : ";
+            cin >> cantintegrantes2;
+            lan->setjefefamilia(jefefamilia2);
+            lan->setanimal(animal2);
+            lan->setlema(lema3);
+            lan->setcantdinero(cantdinero);
+            lan->setfuerzamon(fuerzamon);
+            lan->setcantintegrantes(cantintegrantes2);            
+            while (resp3=='s'){
+               string name;
+               int edad;
+               string tipo;
+               double ataque2;
+               double defensa2;
+               guardia* guardias = new guardia();
+               cout << " ingrese el nombre : ";
+               cin >> name;
+               cout << " ingrese la edad: ";
+               cin >> edad;
+               cout << " ingrese el tipo 1/caballero\n2/jinete\n3/arquero : ";
+               cin >> tipo;
+               if (tipo =="1")
+                  tipo = "caballero";
+               if (tipo=="2")
+                  tipo= "jinete";
+               if (tipo =="3")
+                  tipo = "arquer";
+               cout << "ingrese el ataque:";
+               cin >> ataque2;
+               cout <<" ingrese la defensa:";
+               cin >> defensa2;
+               guardias->setnombre(name);
+               guardias->setedad(edad);
+               guardias->settiposoldado(tipo);
+               guardias->setataque(ataque2);
+               guardias->setdefensa(defensa2);
+               lan->setguardias(guardias);
+               cout << " desea continuas s/n: ";
+               cin >> resp3;
+          }
+       }if ()
    }
 
 

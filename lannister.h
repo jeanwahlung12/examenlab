@@ -11,7 +11,7 @@ class lannister{
       string jefefamilia;
       string animal;
       string lema;
-      vector<guardia*>* guardias ;
+      vector<guardia*> guardias ;
       int cantdinero;
       int fuerzamon;
       int cantintegrantes;
