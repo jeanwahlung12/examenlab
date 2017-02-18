@@ -12,7 +12,7 @@ class targaryen{
       string animal;
       string lema;
       int cantdragones;
-      vector<dothraki*>* ejercito;
+      vector<dothraki*> ejercito;
       int cantbarcos;
    public:
       targaryen();

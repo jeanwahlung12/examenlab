@@ -33,7 +33,7 @@ void targaryen::setcantbarcos(int num){
 }
 
 void targaryen::setejercito(dothraki* doth){
-  ejercito->push_back(doth);
+  ejercito.push_back(doth);
 }
 
 string targaryen::getreina(){
@@ -56,6 +56,6 @@ int targaryen::getcantbarcos(){
 }
 
 dothraki* targaryen::getejercito(int num){
-   return ejercito->at(num);
+   return ejercito[num];
 }
 

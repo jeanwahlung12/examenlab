@@ -135,8 +135,65 @@ double defensa;
                cout << " desea continuas s/n: ";
                cin >> resp3;
           }
-       }if ()
-   }
+       }if (op2==3){
+            string reina;
+            string animal2;
+            string lema3;
+            char resp4='s';
+            int cantdragones;
+            int cantbarcos;
+            targaryen* tar = new targaryen(); 
+            cout << " ingrese el nombre de la reina: ";
+            cin >> reina;
+            cout << " ingrese el animal: ";
+            cin >> animal2;
+            cout << " ingrese el lema: ";
+            cin >> lema3;
+            cout << "ingrese la cantidad de los dragones: ";
+            cin >> cantdragones;
+            cout << "ingrese la cantidad de barcos: ";
+            cin >> cantbarcos;
+            tar->setreina(reina);
+            tar->setanimal(animal2);
+            tar->setlema(lema3);
+            tar->setcantdragones(cantdragones);
+            tar->setcantbarcos(cantbarcos);
+            while(resp4=='s'){
+               string name2;
+               string jefebarbaro;
+               string nombrecaballo;
+               string colorcaballo;
+               double ataque2;
+               double defensa2;
+               dothraki* doth = new dothraki();
+               cout << " ingrese el nombre: ";
+               cin >> name2;
+               cout << " ingrese el jefe barbaro: ";
+               cin >> jefebarbaro;
+               cout << " ingrese el nombre del caballo:";
+               cin >>nombrecaballo;
+               cout << "ingrese el color del caballo:";
+               cin >> colorcaballo;
+               cout<< " ingrese el ataque: ";
+               cin >> ataque2;
+               cout << " ingres la defensa:";
+               cin >> defensa2;
+               doth->setnombre(name2);
+               doth->setjefebarbaro(jefebarbaro);
+               doth->setnombrecaballo(nombrecaballo);
+               doth->setataque(ataque2);
+               doth->setdefensa(defensa2);
+               tar->setejercito(doth);
+               cout << " desea continuar s/n : ";
+               cin >> resp4;
+            }
+            
+         }
+       
+   }if(op=='2'){
+     
+       
+    }  
 
 
 }
