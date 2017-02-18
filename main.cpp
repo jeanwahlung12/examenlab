@@ -9,7 +9,7 @@
 #include<vector>
 
 using namespace std;
-int main(){
+int main(){//abre main
 char resp='s';
 char resp2='s';
 int op;
@@ -31,13 +31,13 @@ string lema2;
 int cantpersonas;
 double ataque;
 double defensa;
-   while(resp=='s'){
+   while(resp=='s'){//while de resp
       cout << "1/agregar\n2/listar\n3/eliminar: " << endl;
       cin >> op;
-      if (op==1){
+      if (op==1){//abre op
          cout << "crear 1/starks\n2/lannister\n3/dothraki:" << endl;
          cin >> op2;
-         if (op2==1){
+         if (op2==1){// abre op2
           
             cout << "ingrese el jefe de familia: ";
             cin >> jefefamilia;
@@ -57,7 +57,7 @@ double defensa;
             stark->setlema(lema);
             stark->setguerrerovalioso(guerrerovalioso);
             stark->setcantintegrantes(cantintegrantes);
-            while(resp2=='s'){
+            while(resp2=='s'){// abre while
                pequenafamilianoble* family = new pequenafamilianoble();
  
                cout << " ingrese el nombre :";
@@ -81,8 +81,9 @@ double defensa;
                stark->setfamilias(family);
                cout << " desea agregar otra familia s/n :";
                cin >> resp2;
-            }
-         } if(op2 ==2){ 
+            }//cierra while
+         }//cierra if op2
+          if(op2 ==2){ //abre if op
             char resp3 ='s';
             
             string jefefamilia2;
@@ -109,7 +110,7 @@ double defensa;
             lan->setcantdinero(cantdinero);
             lan->setfuerzamon(fuerzamon);
             lan->setcantintegrantes(cantintegrantes2);            
-            while (resp3=='s'){
+            while (resp3=='s'){//abre while
                string name;
                int edad;
                string tipo;
@@ -140,8 +141,9 @@ double defensa;
                lan->setguardias(guardias);
                cout << " desea continuas s/n: ";
                cin >> resp3;
-          }
-       }if (op2==3){
+          }// cierra while
+       }//cierra if
+       if (op2==3){//abre if
             string reina;
             string animal2;
             string lema3;
@@ -164,7 +166,7 @@ double defensa;
             tar->setlema(lema3);
             tar->setcantdragones(cantdragones);
             tar->setcantbarcos(cantbarcos);
-            while(resp4=='s'){
+            while(resp4=='s'){// abre while
                string name2;
                string jefebarbaro;
                string nombrecaballo;
@@ -192,11 +194,12 @@ double defensa;
                tar->setejercito(doth);
                cout << " desea continuar s/n : ";
                cin >> resp4;
-            }
+            }// cierra while
             
-         }
-       
-   }if(op==2){
+         }// cierra if
+      
+       }
+   if(op==2){
      int option;
          cout  << "1/starks\n2/lannister\n3/targaryen";
          if (option==1){
@@ -204,7 +207,7 @@ double defensa;
                cout << stark->getfamilias(i);
             }
          }
-    }  
+    }
 
 
 }
