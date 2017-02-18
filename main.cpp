@@ -13,6 +13,11 @@ int main(){
 char resp='s';
 char resp2='s';
 int op;
+
+lannister* lan = new lannister();
+targaryen* tar = new targaryen();
+starks* stark = new starks();
+
 int op2;
 string jefefamilia;
 int cantlobos;
@@ -33,7 +38,7 @@ double defensa;
          cout << "crear 1/starks\n2/lannister\n3/dothraki:" << endl;
          cin >> op2;
          if (op2==1){
-            starks* stark = new starks();
+          
             cout << "ingrese el jefe de familia: ";
             cin >> jefefamilia;
             cout << " ingrese cantidad de lobos: ";
@@ -53,7 +58,8 @@ double defensa;
             stark->setguerrerovalioso(guerrerovalioso);
             stark->setcantintegrantes(cantintegrantes);
             while(resp2=='s'){
-               pequenafamilianoble* family = new pequenafamilianoble(); 
+               pequenafamilianoble* family = new pequenafamilianoble();
+ 
                cout << " ingrese el nombre :";
                cin >> nombre;
                cout << " ingrese el simbolo:";
@@ -78,7 +84,7 @@ double defensa;
             }
          } if(op2 ==2){ 
             char resp3 ='s';
-            lannister* lan = new lannister();
+            
             string jefefamilia2;
             string animal2;
             string lema3;
@@ -142,7 +148,7 @@ double defensa;
             char resp4='s';
             int cantdragones;
             int cantbarcos;
-            targaryen* tar = new targaryen(); 
+            
             cout << " ingrese el nombre de la reina: ";
             cin >> reina;
             cout << " ingrese el animal: ";
@@ -190,9 +196,14 @@ double defensa;
             
          }
        
-   }if(op=='2'){
-     
-       
+   }if(op==2){
+     int option;
+         cout  << "1/starks\n2/lannister\n3/targaryen";
+         if (option==1){
+            for (int i=0;i<stark->familias.size();i++){
+               cout << stark->getfamilias(i);
+            }
+         }
     }  
 
 
